@@ -1,5 +1,5 @@
 # TechWeek Website #
-This repository contains the Techweek website
+This repository contains the Techweek website for the year 2015
 
 ---
 
