@@ -9,7 +9,7 @@
 
 
 I see that you are intersted in the source of this website.
-To speed up the process we used materializecss.com for
+To speed up the process we used materializecss.com for 
 Google Material Design CSS
 
 The content is loaded from a JSON file (because just HTML is boring)
@@ -23,7 +23,7 @@ Enjoy viewing!
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>TechWeek 2016 | Dublin City University</title>
+	<title>TechWeek 2015 | Dublin City University</title>
 
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -35,19 +35,28 @@ Enjoy viewing!
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<!-- Google analytics -->
+	<script>
+  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  	ga('create', 'UA-25936950-2', 'auto');
+  	ga('send', 'pageview');
+	</script>		
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" / >
 </head>
 <body>
 	<div class="wrapper">
 		<header>
 			<h1><span>Tech</span>Week</h1>
-			<p>Dublin City University 15<sup>th</sup> - 19<sup>th</sup> February 2016</p>
-      			<h4><span>We are currently organising the schedule for Tech Week 2016</span></h4>
+			<p>Dublin City University 9<sup>th</sup> - 13<sup>th</sup> March 2015</p>
 		</header>
 
 		<!-- Countdown is show up to 10 minutes before the event -->
 		<div id="countdown">
-			TechWeek Starts in:
+			TechWeek Starts in: 
 			<div class="counter">
 				<span>&nbsp;</span>
 				<span>&nbsp;</span>
@@ -58,16 +67,18 @@ Enjoy viewing!
 
 		<!-- 10 minutes before start of the event the livestream will come on -->
 		<div class="container" id="livestream">
-			<video id="live" controls poster="https://www.redbrick.dcu.ie/includes/images/logo.png">
-				<source src="">
-			</video>
+			<!--<video id="live" controls poster="https://www.redbrick.dcu.ie/includes/images/logo.png">
+				<source src="https://media.heanet.ie/live/31c30c43d755240b5559eac4323c57c9#.VPm_EPmsX00">
+			</video> -->
+		<iframe id="live" src="https://www.youtube.com/embed/videoseries?list=PLPaLJSHTDMFgYNnnEOjuvdm6WqOFTSQ9z" width="100%" height="400" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>	
 		</div>
 
 		<!-- All events are loaded into this element -->
 		<div class="events"></div>
+		 
 	</div>
 
 	<!-- The script is loaded and ran -->
-	<script type="text/javascript" src="js/main.js"></script> <!-- <<<<<< EXPLORE ME <<<<<<< -->
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
